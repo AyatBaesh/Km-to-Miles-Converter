@@ -31,10 +31,11 @@
   h1{
     font-size: 36px;
     font-weight: 600;
+    margin-left: 1.5em;
   }
   .main-container{
     max-width:1080px;
-    margin:auto;
+    
   }
   .unit{
     margin:0;
@@ -42,7 +43,7 @@
   }
 
   /* FORMS */
-
+  
   .input-required {
     color: var(--primary-2);
     text-decoration: none;
@@ -61,7 +62,7 @@
     margin: 0 0 0 0;  
     /* margin-bottom: 1.5em; */
     padding: 0.75em 0.5em;
-    min-width:200px;
+    max-width:220px;
     border:none;
     border-left:7px solid var(--neutral-4);
     transition: border-left-color 160ms;
@@ -75,9 +76,17 @@
     outline:none;
     border-left: 7px solid var(--primary-1);
   }
-  .convert-button{
+  
+  /* FORMS-BUTTONS */
+  .buttons{
+    display:flex;
+    justify-content:space-between;
+    max-width: 400px;
+    
+  }
+  .button{
     background-color: var(--primary-3);
-    display:block;
+    
     margin:1.5em;
     font-size:16px;
     padding:1em;
@@ -87,7 +96,7 @@
     outline: none;
     border-style: none;
   }
-  .convert-button:active{
+  .button:active{
     box-shadow: none;
   }
 
@@ -105,5 +114,29 @@
     text-decoration: none;
   }
 
-  /* BUTTONS */
+ 
+  /* RESPONSIVE */
+  @media(max-width:540px){
+    body{
+      text-align: center;
+      
+    }
+    .unit{
+      display: flex;
+      justify-content: start;
+      margin-left: 1.5em;
+      margin-left: 1.5em ;
+    }
+    .input{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #miles-output{
+      margin-left:1.5em;
+    }
+    .buttons{
+      width:200px;
+    }
+  }
   
