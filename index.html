@@ -12,26 +12,13 @@
         <h1 class = "nav-brand">KM to Miles converter</h1>
     </nav>
     <main class="'main-container">
-        <div>
+        <form>
             <label class="label" for="km-input">Enter the number in kilometers</label>
-            <input 
-            type = "number"
-            class = "input"
-            placeholder = "Enter kilometers"
-            id = "km-input">
+            <input  type = "number" class = "input" placeholder = "Enter kilometers" id = "km-input">
             <span class = "unit">km is</span>
-            
-            
-
-            <input
-             type = "number"
-             class = "input"
-             placeholder = "Result"
-             disabled id = "miles-output">
-             miles
-
-             <input type="button" class="convert-button" value="Convert"></button>
-        </div>
+            <input class = "input" placeholder = "Result" disabled id = "miles-output">miles
+            <input type="reset" class="convert-button"  value="Reset"></button>
+        </form>
     </main>
     <script  type = "module" src = "scripts/main.js"></script>
 </body>
